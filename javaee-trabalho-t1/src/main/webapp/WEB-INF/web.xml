@@ -1,0 +1,30 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Trabalho T1</display-name>
+  <servlet>
+  <servlet-name>HelloServlet</servlet-name>
+  <servlet-class>
+  	com.javaee.trabalho.t1.AlunoServlet
+  </servlet-class>
+  
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>HelloServlet</servlet-name>
+  	<url-pattern>/hello</url-pattern>
+  </servlet-mapping>
+  
+  <error-page>
+	<exception-type>java.lang.Exception</exception-type>
+	<location>/error.jsp</location>
+  </error-page>
+  
+  <taglib>
+  	<taglib-uri>http://journaldev.com/jsp/tlds/customTag</taglib-uri>
+  	<taglib-location>/WEB-INF/customtag.tlds</taglib-location>
+  </taglib>
+  
+</web-app>
